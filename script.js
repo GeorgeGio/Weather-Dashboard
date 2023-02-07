@@ -53,7 +53,7 @@ function historySet() {
 function fetchCity(city) {
     if (city != ""){
 
-        fetch("http://api.openweathermap.org/geo/1.0/direct?q="+ city +"&limit=5&appid=" + APIKey)
+        fetch("https://api.openweathermap.org/geo/1.0/direct?q="+ city +"&limit=5&appid=" + APIKey)
         .then(response => response.json())
         .then(dataOfCity => {
             console.log(dataOfCity);
